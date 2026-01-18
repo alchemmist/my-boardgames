@@ -63,7 +63,7 @@ jobs:
       - name: Post results to PR
         uses: peter-evans/create-or-update-comment@v5
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GH_TOKEN }}
           issue-number: ${{ github.event.pull_request.number }}
           body: |
             ### Performance comparison
